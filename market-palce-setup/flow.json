@@ -1,0 +1,39 @@
+{
+	"contracts": {
+		"ExampleMarketplace": "cadence/contracts/account2/ExampleMarketplace.cdc",
+		"ExampleNFT": "cadence/contracts/account2/Example.cdc",
+		"ExampleToken": "cadence/contracts/ExampleToken.cdc",
+		"Person": "cadence/contracts/Person.cdc"
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"account2": {
+			"address": "192440c99cb17282",
+			"key": "bbf43c3454b2431194d0e5b2de0455f3c71733c6780120c27437bdad5c3381cc"
+		},
+		"default": {
+			"address": "f669cb8d41ce0c74",
+			"key": "e8f0be2bc50b7cfe2038f60fdb9478fed10211b17e55ab755462e4cba518a044"
+		},
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "6d12eebfef9866c9b6fa92b97c6e705c26a1785b1e7944da701fc545a51d4673"
+		}
+	},
+	"deployments": {
+		"emulator": {
+			"account2": [
+				"ExampleNFT",
+				"ExampleMarketplace"
+			],
+			"default": [
+				"ExampleToken",
+				"Person"
+			]
+		}
+	}
+}
