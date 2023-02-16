@@ -42,3 +42,4 @@ flow transactions send cadence/transactions/PurchaseSale.cdc --signer account2
 ```
 flow scripts execute cadence/scripts/VerifyAfterPurchase.cdc
 ```
+ 
